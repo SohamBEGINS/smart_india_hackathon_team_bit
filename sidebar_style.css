@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#sidebar {
+    width: 400px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.sidebar-image img {
+    width: 100%;
+    height: aut;
+    display: block;
+    margin-bottom: 20px;
+    filter: blur(2px); /* Add blur to the image */
+}
+
+.sidebar-options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.option {
+    padding: 15px;
+    text-align: center;
+    margin: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nearest-bus-stand {
+    background-color: #4CAF50;
+}
+
+.start-journey {
+    background-color: #FF5733;
+}
+
+.track-bus {
+    background-color: #3498DB;
+}
+
+.live-updates {
+    background-color: #FFC300;
+}
+
+.option a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+}
+
+.option:hover {
+    background-color: #555;
+}
+
+.live-notifications {
+    list-style-type: disc;
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 14px;
+    display: none; /* Hidden by default */
+}
+
+.live-updates:hover .live-notifications {
+    display: block; /* Show notifications on hover */
+}

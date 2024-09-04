@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.topBar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button, .profile-button {
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.75);
+    /* backdrop-filter: blur(10px); */
+    color: #333;
+    top : 50px;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+    transition: width 0.3s;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.collapsed {
+    width: 0;
+    overflow: hidden;
+}
+
+.menu-options {
+    flex: 1;
+    padding: 10px;
+}
+
+.current-updates {
+    flex: 2;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #ccc;
+}
+
+.content {
+    flex: 1;
+    margin-left: 200px;
+    transition: margin-left 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content.collapsed {
+    margin-left: 0;
+}
+
+#map {
+    height: 100%;
+    width: 70%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Webpage with Sidebar and Google Maps</title>
+    <link rel="stylesheet" href="MainPage.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="topBar">
+            <div class="menu-button" onclick="toggleSidebar()">☰</div>
+            <div class="profile-button" onclick="location.href='profile.html'">Profile</div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <object type="text/html" data="sidebar.html" width="100%" height="100%"></object>
+
+           </div>
+    <script src="MainPage.js"></script>
+</body>
+</html>
